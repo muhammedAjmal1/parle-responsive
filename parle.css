@@ -1,0 +1,76 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.navbar{/*this for changing background of navbar*/
+    background-color: #0a0b27;
+    height: 72px;
+}
+
+.pointer:hover{
+    color: orangered !important;
+    transition: .7s ease-in-out;
+}
+.man{
+    background-color: #0a0b27;
+}
+.logo{
+    height: 27px;
+}
+
+.image-container{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.fit-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.content-box-2{
+    height: 100%;
+    background-color: rgb(223, 126, 15);
+   width: 100%;
+}
+.pre-line{
+    white-space: pre-line;
+}
+body {
+    height: 200vh; /* To enable scrolling */
+    margin: 0;
+    overflow-y: scroll; /* Enable vertical scrolling */
+  }
+  .content-box {
+    background-color: yellow;
+    height: 100%; /* Full screen height */
+    width: 100%;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    position: relative; /* Make the parent position relative for absolute positioning of children */
+    overflow: hidden;
+  }
+  .rotating-image {
+    width:10%; /* Set desired width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.2s ease; /* Smooth rotation */
+  }
+  .overlay-text {
+    position: absolute; /* Position the text over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center correctly */
+    color: white; /* Text color */
+    font-size: 63px; /* Text size */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black; /* Text shadow for better visibility */
+  }
